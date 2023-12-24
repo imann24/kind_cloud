@@ -5,4 +5,4 @@ class Kind(models.Model):
     votes = models.IntegerField(default=0)
     
     def __str__(self):
-        return self.text
+        return f"{self.text} - {self.votes}"

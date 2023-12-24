@@ -6,7 +6,13 @@
 {% block content %}
     <ul class="sky">
         {% for kind in kinds %}
-            <li class="cloud">{{kind.text}}</li>
+            <li class="cloud">
+                {{kind.text}}
+                <div class="vote-button-container">
+                    {% url 'upvote' kind.id as upvote_url %}
+                    {% bootstrap_button button_type="link" content="<i class='fa-solid fa-thumbs-up'></i>" href=upvote_url %}
+                </div>
+            </li>
         {% endfor %}
     </ul>
     <div class="create-button-container">
