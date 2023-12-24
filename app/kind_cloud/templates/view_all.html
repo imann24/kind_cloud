@@ -1,7 +1,11 @@
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Kinds{% endblock %}
+
+{% block content %}
     <ul>
         {% for kind in kinds %}
             <li>{{kind.text}}</li>
         {% endfor %}
     </ul>
-</body>
+{% endblock %}

@@ -1,5 +1,11 @@
-<form action="/create/" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Create">
-</form>
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block title %}Create{% endblock %}
+
+{% block content %}
+    <form action="/create/" method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% bootstrap_button button_type="submit" content="Share" %}
+    </form>
+{% endblock %}

@@ -38,6 +38,20 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-bootstrap5"
+version = "23.3"
+description = "Bootstrap 5 for Django"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "django_bootstrap5-23.3-py3-none-any.whl", hash = "sha256:ca1bb2f40175ed1c1725f52f249a574bf629b33b5a0af3bec0eab1de6d72836c"},
+    {file = "django_bootstrap5-23.3.tar.gz", hash = "sha256:21e1956a8a819370decc5d365ce4f4207761cb065afec5a7df8c4c8c49507f2e"},
+]
+
+[package.dependencies]
+django = ">=3.2"
+
+[[package]]
 name = "sqlparse"
 version = "0.4.4"
 description = "A non-validating SQL parser."
@@ -78,4 +92,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "05a9881e4f5018f7263aad0f2ab0d45e224d49a1276207f0d30ab6e0ce575a58"
+content-hash = "f3458eff959fcf420351afaa97094ce6e709a5d328d5d37963b9e6cf20623746"
