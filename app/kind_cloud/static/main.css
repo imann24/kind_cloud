@@ -40,3 +40,9 @@
     font-size: 1.25rem;
     text-align: center;
 }
+
+#conduct {
+    border-radius: 1rem;
+    border-color: gainsboro;
+    font-size: 1.25rem;
+}

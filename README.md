@@ -19,10 +19,12 @@ An app for sharing kind words with others
 - [ ] Make upvote an Ajax call so page reload is not required
 - [ ] Add cloud frame to quotes
 - [ ] Add copy button to quote 
-- [x] Add upvote button to quote 
-- [ ] Find somewhere to deploy Django apps for free 
-    - [ ] https://fly.io/docs/django/getting-started/
-    - [ ] Integrate gunicorn
+- [ ] Fix CSRF token error on create new
+- [ ] Integrate with Postgres on Fly.io
+- [x] Add upvote button to quote
+- [x] Find somewhere to deploy Django apps for free
+    - [x] https://fly.io/docs/django/getting-started/
+    - [x] Integrate gunicorn
 - [ ] Add a view of an individual quote or a zoom to view feature 
 - [ ] Add a pastel like gradient background
 - [ ] Add a cloud icon to create link/button 
