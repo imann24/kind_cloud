@@ -8,7 +8,7 @@ An app for sharing kind words with others
 
 ## TODO
 - [x] Install Bootstrap
-- [ ] Integrate with font awesome for icons 
+- [x] Integrate with font awesome for icons 
 - [ ] Allow upvoting
 - [ ] Style presentation of upvoted Kinds
 - [ ] Sort the clouds by vote count

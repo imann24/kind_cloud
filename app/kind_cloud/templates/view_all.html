@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load django_bootstrap5 %}
 
 {% block title %}All{% endblock %}
 
@@ -8,4 +9,7 @@
             <li class="cloud">{{kind.text}}</li>
         {% endfor %}
     </ul>
+    <div class="create-button-container">
+        {% bootstrap_button button_type="link" content="<i class='fas fa-cloud'></i> Add" href="/create/" %}
+    </div>
 {% endblock %}
