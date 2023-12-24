@@ -2,6 +2,8 @@
 An app for sharing kind words with others
 
 ## Running Locally
+1. Populate an `.env` by copying and settings value from `example.env`
+    1. Requires a RapidAPI account with a subscription to this API: https://rapidapi.com/twinword/api/sentiment-analysis
 1. `poetry install`
 1. `poetry shell`
 1. `poetry run python app/manage.py runserver`
@@ -25,10 +27,9 @@ An app for sharing kind words with others
 - [ ] Add a pastel like gradient background
 - [ ] Add a cloud icon to create link/button 
 - [ ] Add a share link to the site 
-- [ ] Add a linter for kindness/wholesomeness 
-    - [ ] Sentiment analysis 
-    - [ ] GPT-4 integration?
-    - [ ] https://huggingface.co/blog/sentiment-analysis-python
+- [ ] Add a uniqueness check
+- [x] Add a linter for kindness/wholesomeness 
+    - [x] Sentiment analysis 
 - [ ] Add anchor links 
 - [x] Write a code of conduct
     - [x] Save whether a user has viewed to local storage on browser 
