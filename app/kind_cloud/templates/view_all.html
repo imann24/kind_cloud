@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %}Kinds{% endblock %}
+{% block title %}All{% endblock %}
 
 {% block content %}
-    <ul>
+    <ul class="sky">
         {% for kind in kinds %}
-            <li>{{kind.text}}</li>
+            <li class="cloud">{{kind.text}}</li>
         {% endfor %}
     </ul>
 {% endblock %}

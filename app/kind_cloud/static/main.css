@@ -1,3 +1,24 @@
 .content {
     margin: 1rem;
 }
+
+.sky {
+    list-style-type: none;
+}
+
+.cloud {
+    display: block;
+    width: 200px;
+    height: 60px;
+    border-radius: 200px;
+    animation: cloud 20s linear infinite;
+    transform-origin: 100% 50%;    
+}
+
+.cloud:nth-child(odd) {
+    margin-left: 0.5rem;
+}
+
+.cloud:nth-child(even) {
+    margin-left: 2rem;
+}
