@@ -13,7 +13,7 @@
     border-radius: 200px;
     animation: cloud 20s linear infinite;
     transform-origin: 100% 50%;
-    margin: 2rem;
+    margin: 0.5rem;
 }
 
 .cloud:nth-child(odd) {
@@ -21,7 +21,13 @@
 }
 
 .cloud:nth-child(even) {
-    margin-left: 15rem;
+    margin-left: 20rem;
+}
+
+@media (max-width: 600px) {
+    .cloud:nth-child(even) {
+        margin-left: 9.5rem;
+    }
 }
 
 .create-button-container {
