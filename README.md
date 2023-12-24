@@ -9,11 +9,12 @@ An app for sharing kind words with others
 ## TODO
 - [x] Install Bootstrap
 - [x] Integrate with font awesome for icons 
-- [ ] Allow upvoting
+- [x] Allow upvoting
 - [ ] Style presentation of upvoted Kinds
-- [ ] Sort the clouds by vote count
+- [x] Sort the clouds by vote count
     - [ ] Make the height logarithmic
     - [ ] Add an animated transition
+- [ ] Make upvote an Ajax call so page reload is not required
 - [ ] Add cloud frame to quotes
 - [ ] Add copy button to quote 
 - [ ] Add upvote button to quote 

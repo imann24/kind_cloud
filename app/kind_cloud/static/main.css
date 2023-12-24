@@ -29,3 +29,8 @@
     top: 1rem;
     right: 1rem;
 }
+
+.vote-button-container {
+    font-size: 1.25rem;
+    text-align: center;
+}

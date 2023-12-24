@@ -10,6 +10,7 @@
                 {{kind.text}}
                 <div class="vote-button-container">
                     {% url 'upvote' kind.id as upvote_url %}
+                    {{kind.votes}}
                     {% bootstrap_button button_type="link" content="<i class='fa-solid fa-thumbs-up'></i>" href=upvote_url %}
                 </div>
             </li>
