@@ -5,3 +5,8 @@ An app for sharing kind words with others
 1. `poetry install`
 1. `poetry shell`
 1. `poetry run python app/manage.py runserver`
+
+## TODO
+- [ ] Install Bootstrap
+- [ ] Allow upvoting
+- [ ] Style presentation of upvoted Kinds
