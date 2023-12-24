@@ -17,7 +17,7 @@ An app for sharing kind words with others
 - [ ] Make upvote an Ajax call so page reload is not required
 - [ ] Add cloud frame to quotes
 - [ ] Add copy button to quote 
-- [ ] Add upvote button to quote 
+- [x] Add upvote button to quote 
 - [ ] Find somewhere to deploy Django apps for free 
     - [ ] https://fly.io/docs/django/getting-started/
     - [ ] Integrate gunicorn
@@ -30,10 +30,10 @@ An app for sharing kind words with others
     - [ ] GPT-4 integration?
     - [ ] https://huggingface.co/blog/sentiment-analysis-python
 - [ ] Add anchor links 
-- [ ] Write a code of conduct
-    - [ ] Save whether a user has viewed to local storage on browser 
-    - [ ] No sensitive information 
-    - [ ] On the create page
+- [x] Write a code of conduct
+    - [x] Save whether a user has viewed to local storage on browser 
+    - [x] No sensitive information 
+    - [x] On the create page
 - [ ] Add a link to the source code
 - [ ] Export to spreadsheet?
 - [ ] Make site responsive on mobile

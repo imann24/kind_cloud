@@ -1,12 +1,23 @@
 {% extends 'base.html' %}
 {% load django_bootstrap5 %}
-
 {% block title %}Create{% endblock %}
 
 {% block content %}
+    <dialog id="conduct">
+        <h2>Code of Conduct</h2>
+        <form method="dialog">
+            <ol>
+                <li>Be kind</li>
+                <li>Share a positive message</li>
+                <li>Don't reveal personal information</li>
+            </ol>
+            {% bootstrap_button button_type="submit" content="Accept" %}
+        </form>
+    </dialog>
     <form action="/create/" method="post">
         {% csrf_token %}
         {% bootstrap_form form %}
         {% bootstrap_button button_type="submit" content="<i class='fas fa-cloud'></i> Share" %}
     </form>
+    <script src="/static/create.js"></script>
 {% endblock %}
