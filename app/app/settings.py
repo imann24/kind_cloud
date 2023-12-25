@@ -31,7 +31,7 @@ ALLOWED_HOSTS = [f'{APP_NAME}.fly.dev', 'localhost']
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['https://{APP_NAME}.fly.dev']
+CSRF_TRUSTED_ORIGINS = [f'https://{APP_NAME}.fly.dev']
 CSRF_COOKIE_DOMAIN = 'fly.dev'
 
 # Application definition
