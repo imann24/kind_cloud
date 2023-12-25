@@ -8,6 +8,10 @@ An app for sharing kind words with others
 1. `poetry shell`
 1. `poetry run python app/manage.py runserver`
 
+## Deploying
+1. Setup `fly.io` command line: https://fly.io/docs/hands-on/install-flyctl
+1. `fly deploy`
+
 ## TODO
 - [x] Install Bootstrap
 - [x] Integrate with font awesome for icons 
