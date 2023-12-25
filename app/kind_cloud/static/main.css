@@ -31,9 +31,16 @@
 }
 
 .create-button-container {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
+    width: 10rem;
+    height: 4rem;
+}
+
+.create-button-container .btn {
+    font-size: 1.75rem;
+    padding-top: 0.75rem;
 }
 
 .vote-button-container {

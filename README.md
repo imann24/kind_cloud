@@ -25,6 +25,7 @@ An app for sharing kind words with others
 - [x] Find somewhere to deploy Django apps for free
     - [x] https://fly.io/docs/django/getting-started/
     - [x] Integrate gunicorn
+- [ ] "You are not alone." --> debug negative sentiment
 - [ ] Add a view of an individual quote or a zoom to view feature 
 - [ ] Add a pastel like gradient background
 - [ ] Add a cloud icon to create link/button 
