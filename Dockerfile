@@ -2,6 +2,9 @@ ARG PYTHON_VERSION=3.10-slim-bullseye
 
 FROM python:${PYTHON_VERSION}
 
+# Install the Postgres driver
+RUN apt-get update && apt-get install -y libpq-dev gcc
+
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
