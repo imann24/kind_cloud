@@ -58,7 +58,6 @@
 #zoom {
     border-radius: 2rem;
     width: 95vw;
-    height: 90%;
     margin: 0 auto;
     margin-top: 5%;
     font-size: 6.5rem;
@@ -78,7 +77,7 @@
 
 #zoom .text-container {
     padding: 1rem;
-    margin-top: 1.75rem;
+    margin: 5rem auto;
 }
 
 @media (max-width: 1000px) {
