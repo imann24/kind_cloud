@@ -16,8 +16,8 @@ An app for sharing kind words with others
 - [x] Install Bootstrap
 - [x] Integrate with font awesome for icons 
 - [x] Allow upvoting
-- [ ] Create Admin delete view
-- [ ] Check longest post length
+- [x] Create Admin delete view
+- [x] Check longest post length
 - [ ] Style presentation of upvoted Kinds
 - [x] Sort the clouds by vote count
     - [ ] Make the height logarithmic
@@ -46,9 +46,9 @@ An app for sharing kind words with others
     - [x] Save whether a user has viewed to local storage on browser 
     - [x] No sensitive information 
     - [x] On the create page
-- [ ] Add a link to the source code
+- [x] Add a link to the source code
 - [ ] Export to spreadsheet?
-- [ ] Make site responsive on mobile
+- [x] Make site responsive on mobile
 - [ ] Add telemetry/analytics 
     - [ ] Mixpanel?
     - [ ] https://github.com/mixpanel/mixpanel-python
