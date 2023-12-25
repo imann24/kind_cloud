@@ -1,0 +1,125 @@
+
+.sky {
+    list-style-type: none;
+}
+
+.cloud {
+    display: block;
+    width: 400px;
+    height: 200px;
+    padding-top: 1.75rem;
+    padding-bottom: 2.5rem;
+    padding-left:  3.75rem;
+    padding-right: 3rem;
+    transform-origin: 100% 50%;
+    margin: 0.5rem;
+    margin-bottom: -2.5rem;
+    background-image: url('/static/img/cloud.png');
+    background-size: contain;
+}
+
+.cloud .btn {
+    border-radius: 1rem;
+    padding: 0.75rem;
+}
+
+.cloud:nth-child(odd) {
+    margin-left: 0.5rem;
+}
+
+.cloud:nth-child(even) {
+    margin-left: 20rem;
+}
+
+.cloud-text {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.vote-button-container {
+    color: darkslategray;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.create-button-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 10rem;
+    height: 4rem;
+}
+
+.create-button-container .btn {
+    font-size: 1.75rem;
+    padding-top: 0.75rem;
+}
+
+#zoom {
+    border-radius: 2rem;
+    width: 95vw;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 6.5rem;
+    padding: 1rem;
+}
+
+#zoom form {
+    margin-block-end: 0;
+}
+
+#zoom .close-icon {
+    position: fixed;
+    top: 5rem;
+    right: 12.5%;
+    font-size: 3rem;
+}
+
+#zoom .text-container {
+    padding: 1rem;
+    margin-top: 1.75rem;
+}
+
+@media (max-width: 1000px) {
+    .cloud {
+        width: 650px;
+        height: 325px;
+        padding-left: 7.25rem;
+        padding-right: 6.75rem;
+    }
+
+    .cloud-text {
+        font-size: 3rem !important;
+        height: 160px;
+    }
+
+    .cloud .btn {
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    .vote-button-container {
+        font-size: 3rem;
+        margin-top: -1rem;
+    }
+
+    .cloud:nth-child(even) {
+        margin-left: 17rem;
+    }
+
+    .create-button-container {
+        width: 15rem;
+        height: 6rem;
+    }
+
+    .create-button-container .btn {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .cloud:nth-child(even) {
+        margin-left: 9rem;
+    }
+}

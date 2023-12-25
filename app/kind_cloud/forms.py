@@ -1,6 +1,6 @@
 import os
 import requests
-from django.forms import ModelForm
+from django.forms import CharField, ModelForm, Textarea
 from django.core import validators
 from .models import Kind
 
@@ -16,6 +16,7 @@ def make_request_to_sentiment_api(text):
     return response.json().get('type', False)
 
 class KindForm(ModelForm):
+    text = CharField(widget=Textarea(attrs={'rows': 3, 'cols': 40}))
     def __init__(self, *args, **kwargs):
         super(KindForm, self).__init__(*args, **kwargs)
         self.fields['text'].label = 'Kind Words'

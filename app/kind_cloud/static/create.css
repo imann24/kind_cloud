@@ -1,0 +1,28 @@
+#conduct {
+    border-radius: 1rem;
+    border-color: gainsboro;
+    font-size: 1.25rem;
+}
+
+#create-form {
+    font-size: 2rem;
+    width: 75%;
+}
+
+@media (max-width: 1000px) {
+    #create-form {
+        font-size: 5rem;
+        width: 100%;
+    }
+
+    #create-form textarea {
+        font-size: 2rem;
+        height: 10rem;
+    }
+
+    .btn {
+        width: 15rem;
+        height: 5rem;
+        font-size: 2.5rem;
+    }
+}

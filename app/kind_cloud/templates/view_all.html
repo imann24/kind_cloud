@@ -1,22 +1,39 @@
 {% extends 'base.html' %}
 {% load django_bootstrap5 %}
+{% load static %}
 
 {% block title %}All{% endblock %}
 
+{% block head %}
+    <link rel="stylesheet" href="{% static 'view_all.css' %}">
+    <script src="{% static 'view_all.js' %}"></script>
+{% endblock %}
+
 {% block content %}
+    <dialog id="zoom">
+        <form method="dialog">
+            {% bootstrap_button content="<i class='fa fa-window-close'></i> Close" button_class="btn-primary close-icon" %}
+        </form>
+        <div class="text-container"></div>
+    </dialog>
     <ul class="sky">
         {% for kind in kinds %}
             <li class="cloud">
-                {{kind.text}}
+                <span class="cloud-text" style="font-size: {% if kind.text|length < 100 %} 2rem {% elif kind.text|length < 150 %} 1.5rem {% elif kind.text|length < 350 %} 0.85rem {% else %} 0.75rem {% endif %};">
+                    {{kind.text}}
+                </span>
                 <div class="vote-button-container">
                     {% url 'upvote' kind.id as upvote_url %}
                     {{kind.votes}}
                     {% bootstrap_button button_type="link" content="<i class='fa-solid fa-thumbs-up'></i>" href=upvote_url button_class="btn btn-primary btn-sm" %}
+                    <button class="btn btn-primary btn-sm" onclick="zoomOnKindCloud(`{{kind.text}}`)">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
             </li>
         {% endfor %}
     </ul>
     <div class="d-grid gap-2 create-button-container">
-        {% bootstrap_button button_type="link" content="<i class='fas fa-cloud'></i> Add" href="/create" button_class="btn btn-primary opacity-75" %}
+        {% bootstrap_button button_type="link" content="<i class='fas fa-cloud'></i> Add" href="/create" button_class="btn btn-primary" %}
     </div>
 {% endblock %}

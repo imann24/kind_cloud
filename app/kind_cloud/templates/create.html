@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load django_bootstrap5 %}
+{% load static %}
+
 {% block title %}Create{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'create.css' %}">
+{% endblock %}
 
 {% block content %}
     <dialog id="conduct">
@@ -15,10 +21,10 @@
         </form>
     </dialog>
     {% bootstrap_button button_type="link" content="<i class='fas fa-arrow-left'></i> Back" button_class="btn btn-secondary btn-sm mb-3" href="/" %}
-    <form action="/create/" method="post" id="create-form" class="w-75">
+    <form action="/create/" method="post" id="create-form">
         {% csrf_token %}
         {% bootstrap_form form %}
         {% bootstrap_button button_type="submit" content="<i class='fas fa-cloud'></i> Share" %}
     </form>
-    <script src="/static/create.js"></script>
+    <script src="{% static 'create.js' %}"></script>
 {% endblock %}

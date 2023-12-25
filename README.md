@@ -16,6 +16,8 @@ An app for sharing kind words with others
 - [x] Install Bootstrap
 - [x] Integrate with font awesome for icons 
 - [x] Allow upvoting
+- [ ] Create Admin delete view
+- [ ] Check longest post length
 - [ ] Style presentation of upvoted Kinds
 - [x] Sort the clouds by vote count
     - [ ] Make the height logarithmic
@@ -30,7 +32,9 @@ An app for sharing kind words with others
     - [x] https://fly.io/docs/django/getting-started/
     - [x] Integrate gunicorn
 - [ ] "You are not alone." --> debug negative sentiment
-- [ ] Add a view of an individual quote or a zoom to view feature 
+- [x] Add a zoom to view feature
+- [ ] Add a separate page view of an individual quote
+- [ ] Allow voting on zoomed in quotes
 - [ ] Add a pastel like gradient background
 - [ ] Add a cloud icon to create link/button 
 - [ ] Add a share link to the site 
