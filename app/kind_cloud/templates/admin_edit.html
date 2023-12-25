@@ -1,0 +1,18 @@
+<script>
+    function showConfirmation() {
+        if(!confirm("Are you sure you want to delete?")) {
+          return false;
+        }
+        this.form.submit();
+    }
+</script>
+<ul>
+    {% for kind in kinds %}
+        <li>{{kind.text}}</li>
+        <form action="/delete/" method="post" >
+            {% csrf_token %}
+            <input type="hidden" name="kind_id" value="{{kind.id}}" />
+            <input type="submit" value="Delete" onclick="showConfirmation();"/>
+        </form>
+    {% endfor %}
+</ul>
