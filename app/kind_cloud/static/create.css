@@ -11,18 +11,26 @@
 
 @media (max-width: 1000px) {
     #create-form {
+        margin-top: 15rem;
         font-size: 5rem;
         width: 100%;
     }
 
     #create-form textarea {
-        font-size: 2rem;
-        height: 10rem;
+        font-size: 3.5rem;
+        height: 25rem;
     }
 
     .btn {
+        margin-top: 2rem;
         width: 15rem;
         height: 5rem;
         font-size: 2.5rem;
+    }
+
+    #create-form .btn {
+        width: 20rem;
+        height: 7.5rem;
+        font-size: 3rem;
     }
 }
