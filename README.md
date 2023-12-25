@@ -24,7 +24,7 @@ An app for sharing kind words with others
 - [ ] Add cloud frame to quotes
 - [ ] Add copy button to quote 
 - [ ] Fix CSRF token error on create new
-- [ ] Integrate with Postgres on Fly.io
+- [x] Integrate with Postgres on Fly.io
 - [x] Add upvote button to quote
 - [x] Find somewhere to deploy Django apps for free
     - [x] https://fly.io/docs/django/getting-started/
