@@ -21,9 +21,9 @@ An app for sharing kind words with others
     - [ ] Make the height logarithmic
     - [ ] Add an animated transition
 - [ ] Make upvote an Ajax call so page reload is not required
-- [ ] Add cloud frame to quotes
+- [x] Add cloud frame to quotes
 - [ ] Add copy button to quote 
-- [ ] Fix CSRF token error on create new
+- [x] Fix CSRF token error on create new
 - [x] Integrate with Postgres on Fly.io
 - [x] Add upvote button to quote
 - [x] Find somewhere to deploy Django apps for free
