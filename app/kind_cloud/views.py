@@ -1,6 +1,7 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib.auth.decorators import user_passes_test
+from django.views.decorators.csrf import csrf_exempt
 from .models import Kind
 from .forms import KindForm
 
@@ -10,6 +11,7 @@ def index(request):
         'kinds': kinds,
     })
 
+@csrf_exempt
 def create(request):
     if request.method == 'POST':
         form = KindForm(request.POST)
